@@ -37,6 +37,9 @@ See the directory [shell](shell/).
 - [Google drive](https://drive.google.com/drive/folders/1gv3zZgxcYliL9DPrtkJQAhrUTA-mE5Ge?usp=sharing).
 - [Baidu disk](https://pan.baidu.com/s/1mftlQhQJu04j-bU1Wo_-Bg) with password ```ivg0```.
 
+If you want to test the discriminators, you need to download the pre-trained models, and put them into the directory [pretrained_models](pretrained_models/).  
+Meanwhile, you may need to modify the model location options in the [shell](shell/) scripts so that these model files can be loaded correctly.
+
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).

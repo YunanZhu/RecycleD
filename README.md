@@ -1,6 +1,15 @@
 # RecycleD
 Official PyTorch implementation of the paper "Recycling Discriminator: Towards Opinion-Unaware Image Quality Assessment Using Wasserstein GAN", accepted to ACM Multimedia 2021 Brave New Ideas (BNI) Track.
 
+## Brief Introduction
+**The core idea of RecycleD is to reuse the pre-trained discriminator in SR WGAN to directly assess the image perceptual quality.**
+
+![overall_pipeline](figs/overall_pipeline.png)
+
+In addition, we use the Salient Object Detection (SOD) networks and Image Residuals to produce weight matrices to improve the PatchGAN discriminator.
+
+<div align=center><img src="figs/score_weight_pipeline.png" width="60%" height="60%" /></div>
+
 ## Requirements
 - Python 3.6
 - NumPy 1.17
@@ -11,6 +20,22 @@ Official PyTorch implementation of the paper "Recycling Discriminator: Towards O
 - Pillow 5.2
 - OpenCV-Python 3.4
 - SciPy 1.4
+
+## Datasets
+### For Training
+We adopt the commonly used [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) as the training set to train SR WGAN.  
+For training, we use the HR images in "DIV2K/DIV2K_train_HR/", and LR images in "DIV2K/DIV2K_train_LR_bicubic/X4/". (The upscale factor is x4.)  
+For validation, we use the Set5 & Set14 datasets. You can download these benchmark datasets from [LapSRN project page](http://vllab.ucmerced.edu/wlai24/LapSRN/) or [My Baidu disk](https://pan.baidu.com/s/18QNVf-V6LHphK0sO4-Yf9w) with password ```srbm```.
+### For Test
+We use [PIPAL](https://www.jasongt.com/projectpages/pipal.html), [Ma's dataset](https://sites.google.com/site/chaoma99/sr-metric), [BAPPS-Superres](https://github.com/richzhang/PerceptualSimilarity#c-about-the-dataset) as super-resolved image quality datasets.  
+We use [LIVE-itW](https://live.ece.utexas.edu/research/ChallengeDB/index.html) and [KonIQ-10k](http://database.mmsp-kn.de/koniq-10k-database.html) as artificially distorted image quality datasets.
+
+## Getting Started
+See the directory [shell](shell/).
+
+## Pre-trained Models
+- [Google drive](https://drive.google.com/drive/folders/1gv3zZgxcYliL9DPrtkJQAhrUTA-mE5Ge?usp=sharing).
+- [Baidu disk](https://pan.baidu.com/s/1mftlQhQJu04j-bU1Wo_-Bg) with password ```ivg0```.
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  

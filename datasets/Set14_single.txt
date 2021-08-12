@@ -1,0 +1,14 @@
+baboon.png
+barbara.png
+bridge.png
+coastguard.png
+comic.png
+face.png
+flowers.png
+foreman.png
+lenna.png
+man.png
+monarch.png
+pepper.png
+ppt3.png
+zebra.png

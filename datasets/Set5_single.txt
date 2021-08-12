@@ -1,0 +1,5 @@
+baby.png
+bird.png
+butterfly.png
+head.png
+woman.png

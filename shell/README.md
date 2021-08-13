@@ -1,6 +1,7 @@
 # Train & Test
 You can use these shell files to train SR WGAN, or to test the discriminator on IQA datasets.  
-Please modify the necessary options according to the annotations, to ensure that they can run successfully in your environment.
+Please modify the necessary options according to the annotations, to ensure that they can run successfully in your environment.  
+To further learn about the meaning of each option, recommend you to consult the code in the directory [options](../options/).
 
 ## Train
 Run [train_SR-WGAN.sh](shell/train_SR-WGAN.sh).

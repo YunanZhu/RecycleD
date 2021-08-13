@@ -190,11 +190,6 @@ def main(opts):
                 # Log content loss.
                 logger.add_scalar("pretrain/iter content loss", ctt_loss.item(), iteration)
 
-                #####################################################################################
-                if i >= 2:
-                    break
-                #####################################################################################
-
             if opts.pretrain_chkpt_intrvl >= 1 and epoch % opts.pretrain_chkpt_intrvl == 0:
                 path_to_save = SAVE_MODELS_PATH + f"/pretrain_epoch{epoch:04d}/"
                 os.makedirs(path_to_save, exist_ok=True)
@@ -281,10 +276,6 @@ def main(opts):
                 save_image(lr_images, path_to_save + f"LR.png")
             # endregion
 
-            #####################################################################################
-            if i >= 2:
-                break
-            #####################################################################################
         # endregion
 
         # region -------- SR Validation --------

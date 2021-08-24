@@ -49,6 +49,12 @@ If you find this repository is useful for your research, please cite the followi
 
 (1) BibTeX:
 ```
+@inproceedings{zhu2021recycled,
+  title = {Recycling Discriminator: Towards Opinion-Unaware Image Quality Assessment Using Wasserstein GAN},
+  author = {Yunan Zhu, Haichuan Ma, Jialun Peng, Dong Liu, and Zhiwei Xiong},
+  booktitle = {Proceedings of the 29th ACM International Conference on Multimedia},
+  year = {2021}
+}
 ```
 
 (2) ACM Reference Format:

@@ -1,6 +1,10 @@
 # RecycleD
 Official PyTorch implementation of the paper "Recycling Discriminator: Towards Opinion-Unaware Image Quality Assessment Using Wasserstein GAN", accepted to ACM Multimedia 2021 Brave New Ideas (BNI) Track.
 
+[[Paper](https://dl.acm.org/doi/10.1145/3474085.3479234)]
+[[PDF at Baidu disk](https://pan.baidu.com/s/1po6ILktvmbOwbwgYir9bBA) ```nv52```]
+[[PDF at Google drive](https://drive.google.com/drive/folders/1tfVhX8UyKpK2fEQZ9AEOKoHmsLzvAMSA)]
+
 ## Brief Introduction
 **The core idea of RecycleD is to reuse the pre-trained discriminator in SR WGAN to directly assess the image perceptual quality.**
 
@@ -49,11 +53,12 @@ If you find this repository is useful for your research, please cite the followi
 
 (1) BibTeX:
 ```
-@inproceedings{zhu2021recycled,
-  title = {Recycling Discriminator: Towards Opinion-Unaware Image Quality Assessment Using Wasserstein GAN},
-  author = {Yunan Zhu, Haichuan Ma, Jialun Peng, Dong Liu, and Zhiwei Xiong},
-  booktitle = {Proceedings of the 29th ACM International Conference on Multimedia},
-  year = {2021}
+@inproceedings{zhu2021recycling,
+  title={Recycling Discriminator: Towards Opinion-Unaware Image Quality Assessment Using Wasserstein GAN},
+  author={Zhu, Yunan and Ma, Haichuan and Peng, Jialun and Liu, Dong and Xiong, Zhiwei},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={116--125},
+  year={2021}
 }
 ```
 
